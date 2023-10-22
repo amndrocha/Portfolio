@@ -108,6 +108,7 @@ drawingsClose.onclick = function() {
 var drawings = ["assets/drawings/0.jpeg","assets/drawings/1.png","assets/drawings/2.png","assets/drawings/3.png","assets/drawings/4.png","assets/drawings/5.png","assets/drawings/6.png","assets/drawings/7.png"];
 var image = document.getElementById("drawingView")
 var i = 0;
+var count = document.getElementById("count");
 
 function left() {
     if (i > 0) {
@@ -115,8 +116,8 @@ function left() {
     } else {
         i = drawings.length-1;
     }
-    console.log(i);
     image.src = drawings[i];
+    count.innerHTML = (i+1)+"/"+drawings.length;
 }
 
 function right() {
@@ -126,5 +127,5 @@ function right() {
         i = 0;
     }
     image.src = drawings[i];
-    console.log(i);
+    count.innerHTML = (i+1)+"/"+drawings.length;
 }
