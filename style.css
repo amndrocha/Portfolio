@@ -54,29 +54,27 @@ h1 {
 }
 
 a {
+    cursor: pointer;
     width: fit-content;
     font-size: 150%;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.545);
+    background-color: white;
 }
 
 button {
+    cursor: pointer;
     background: none;
     border: none;
+    text-decoration: underline;
     text-align:right;
     font-size: 150%;
 }
 
-.underlined:hover {
+button:hover {
     background-color: white;
-}
-
-.underlined {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 #border {
