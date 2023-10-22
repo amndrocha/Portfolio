@@ -65,6 +65,13 @@ a:hover {
     background-color: white;
 }
 
+.linkHover  {
+    text-decoration: underline;
+}
+.linkHover:hover {
+    background-color: rgb(220, 220, 220);
+}
+
 button {
     cursor: pointer;
     text-decoration: underline;
@@ -149,25 +156,52 @@ button:hover {
 
 }
 
-.close {
+#drawingsClose {
+    background-color: transparent;
+    box-shadow: none;
     margin-bottom: 10px;
-    padding: 0 10px 4px 10px;
-    font-weight: normal;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
 }
-.close:hover {
+#drawingsClose:hover {
     background-color: rgba(0, 0, 0, 0.188);
     -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
 }
 
-.modal {
+
+.close {
+    background-color: rgba(0, 0, 0, 0.188);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    padding: 0 10px 4px 10px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.close:hover {
+    background-color: white;
+}
+
+.modal {  
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 5px 10px 20px 20px;
+    gap: 5px;
+    background-color: white;
+}
+#drawingsModal {
+    display: none;
+    background-color: transparent;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -175,6 +209,7 @@ button:hover {
     height: fit-content;
     padding: 5px 10px 20px 20px;    
 }
+
 
 #modalBackground {
     position: absolute;
@@ -230,6 +265,14 @@ button:hover {
     height: auto;
 }
 
+#unavailable {
+    cursor: not-allowed;
+    color: gray;
+    text-decoration: line-through;
+}
+#unavailable:onhover {
+    background-color: transparent;
+}
 
 @media (orientation:portrait) {
     .navegation {
@@ -272,5 +315,11 @@ button:hover {
     }
     .imgArrow {
         margin: 0;
+    }
+    .modal {
+        max-width: 80vw;
+    }
+    .video {
+        max-width: 80vw;
     }
 }

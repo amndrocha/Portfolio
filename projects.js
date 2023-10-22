@@ -75,7 +75,6 @@ var diOpen = document.getElementById("diModalBtn");
 var diModal = document.getElementById("diModal");
 var diClose = document.getElementById("diClose");
 diOpen.onclick = function() {
-    alert("foi");
     modalBackground.style.display = "flex";
     diModal.style.display = "flex";
 }
