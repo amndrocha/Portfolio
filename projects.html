@@ -30,42 +30,49 @@
             <a id="contactListBtn">Lista de contato</a><span style="font-size: 170%;"> <<</span><br/>
             <a id="dressUpBtn">Jogo de vestir</a><span style="font-size: 170%;"> <<</span><br/>
             <a id="ecommerceBtn">E-commerce</a><span style="font-size: 170%;"> <<</span><br/>
-        </div>
-        <button id="wireframesBtn" onclick="openWireframes()">________Wireframes</button>
+            </div>
+        <button id="wireframesBtn" class="underlined" onclick="openWireframes()">________Wireframes</button>
         <div style="display: none;" id="wireframes">
             <a id="mapModalBtn">Mapa campus</a><span style="font-size: 170%;"> <<</span><br/>
             <a id="diModalBtn">DI Direto</a><span style="font-size: 170%;"> <<</span><br/>
         </div>
-        <button id="drawingsBtn">_______Ilustrações</button>
-        <button id="othersBtn">____________Outros</button>
+        <button id="devBtn" onclick="openDrawings()">_______Ilustrações</button>
+        <button id="devBtn" onclick="openOthers()">____________Outros</button>
     </div>
 
-    <div id="modalBackground">
+    <div id="modalBackground" onclick="close()">
         <div id="contactListModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="contactListClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="contactListClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
         <div id="dressUpModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="dressUpClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="dressUpClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
         <div id="ecommerceModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="ecommerceClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="ecommerceClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
         <div id="mapModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="mapClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="mapClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
         <div id="diModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="diClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="diClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
         <div id="drawingsModal" class="modal">
-            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="drawingsClose" class="close">X</button></div>
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="drawingsClose" class="close">fechar</button></div>
+            <div id="drawings">
+                <button onclick="left()" id="left" class="imgArrow"><</button>
+                <div id="drawingBox"><img  id="drawingView"src="assets/drawings/0.jpeg"/></div>                
+                <button onclick="right()" class="imgArrow">></button>
+            </div>
+        </div>
+        <div id="othersModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: center;"><button id="othersClose" class="close">fechar</button></div>
             <p>AAAAAA</p>
         </div>
-        <div id="othersModal" class="modal"></div>
     </div>
     <script src="projects.js"></script>
 

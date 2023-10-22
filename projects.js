@@ -16,7 +16,6 @@ function openWireframes() {
 }
 
 const modalBackground = document.getElementById("modalBackground");
-var modalOpen;
 
 function close() {
     modalBackground.style.display = "none";
@@ -30,7 +29,6 @@ var contactListClose = document.getElementById("contactListClose");
 contactListOpen.onclick = function() {
     modalBackground.style.display = "flex";
     contactListModal.style.display = "flex";
-    modalOpen = "contactListModal";
 }
 contactListClose.onclick = function() {
     modalBackground.style.display = "none";
@@ -43,7 +41,6 @@ var dressUpClose = document.getElementById("dressUpClose");
 dressUpOpen.onclick = function() {
     modalBackground.style.display = "flex";
     dressUpModal.style.display = "flex";
-    modalOpen = "dressUpModal";
 }
 dressUpClose.onclick = function() {
     modalBackground.style.display = "none";
@@ -56,61 +53,79 @@ var ecommerceClose = document.getElementById("ecommerceClose");
 ecommerceOpen.onclick = function() {
     modalBackground.style.display = "flex";
     ecommerceModal.style.display = "flex";
-    modalOpen = "ecommerceModal";
 }
 ecommerceClose.onclick = function() {
     modalBackground.style.display = "none";
     ecommerceModal.style.display = "none";
 }
 
-var mapOpen = document.getElementById("mapBtn");
+var mapOpen = document.getElementById("mapModalBtn");
 var mapModal = document.getElementById("mapModal");
 var mapClose = document.getElementById("mapClose");
 mapOpen.onclick = function() {
     modalBackground.style.display = "flex";
     mapModal.style.display = "flex";
-    modalOpen = "mapModal";
 }
 mapClose.onclick = function() {
     modalBackground.style.display = "none";
     mapModal.style.display = "none";
 }
 
-var diOpen = document.getElementById("diBtn");
+var diOpen = document.getElementById("diModalBtn");
 var diModal = document.getElementById("diModal");
 var diClose = document.getElementById("diClose");
 diOpen.onclick = function() {
+    alert("foi");
     modalBackground.style.display = "flex";
     diModal.style.display = "flex";
-    modalOpen = "diModal";
 }
 diClose.onclick = function() {
     modalBackground.style.display = "none";
     diModal.style.display = "none";
 }
 
-var othersOpen = document.getElementById("othersBtn");
 var othersModal = document.getElementById("othersModal");
 var othersClose = document.getElementById("othersClose");
-othersOpen.onclick = function() {
+function openOthers() {
     modalBackground.style.display = "flex";
     othersModal.style.display = "flex";
-    modalOpen = "othersModal";
 }
 othersClose.onclick = function() {
     modalBackground.style.display = "none";
     othersModal.style.display = "none";
 }
 
-var drawingsOpen = document.getElementById("drawingsBtn");
 var drawingsModal = document.getElementById("drawingsModal");
 var drawingsClose = document.getElementById("drawingsClose");
-drawingsOpen.onclick = function() {
+function openDrawings() {
     modalBackground.style.display = "flex";
     drawingsModal.style.display = "flex";
-    modalOpen = "drawingsModal";
 }
 drawingsClose.onclick = function() {
     modalBackground.style.display = "none";
     drawingsModal.style.display = "none";
+}
+
+var drawings = ["assets/drawings/0.jpeg","assets/drawings/1.png","assets/drawings/2.png","assets/drawings/3.png","assets/drawings/4.png","assets/drawings/5.png","assets/drawings/6.png","assets/drawings/7.png"];
+var image = document.getElementById("drawingView")
+var i = 0;
+
+function left() {
+    if (i > 0) {
+        i--;
+    } else {
+        i = drawings.length-1;
+    }
+    console.log(i);
+    image.src = drawings[i];
+}
+
+function right() {
+    if (i < drawings.length-1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    image.src = drawings[i];
+    console.log(i);
 }
