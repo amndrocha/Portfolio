@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Bloom</title>
+    <link href='style.css' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+    <div id="border"></div>
+    
+    <div id="lower" class="navegation">
+        <p class="stamp">f</p>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contato</a>
+        <a href="projects.html">Projetos</a>
+        <a href="about.html">Sobre mim</a>
+    </div>
+    
+    <div class="middle">
+
+        <h2>Projetos</h2>
+        <br/><br/>
+        <button id="devBtn" class="underlined" onclick="openDev()">_______Programação</button>
+        <div style="display: none;" id="dev">
+            <a id="contactListBtn" class="openModal">Lista de contato</a><span style="font-size: 170%;"> <<</span><br/>
+            <a id="dressUpBtn" class="openModal">Jogo de vestir</a><span style="font-size: 170%;"> <<</span><br/>
+            <a id="ecommerceBtn" class="openModal">E-commerce</a><span style="font-size: 170%;"> <<</span><br/>
+            </div>
+        <button id="wireframesBtn" class="underlined" onclick="openWireframes()">________Wireframes</button>
+        <div style="display: none;" id="wireframes">
+            <a id="mapModalBtn" class="openModal">Mapa campus</a><span style="font-size: 170%;"> <<</span><br/>
+            <a id="diModalBtn" class="openModal">DI Direto</a><span style="font-size: 170%;"> <<</span><br/>
+        </div>
+        <button id="drawingsBtn" class="openModal">_______Ilustrações</button>
+        <button id="othersBtn" class="openModal">____________Outros</button>
+    </div>
+
+    <div id="modalBackground">
+        <div id="contactListModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="contactListClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="dressUpModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="dressUpClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="ecommerceModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="ecommerceClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="mapModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="mapClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="diModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="diClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="drawingsModal" class="modal">
+            <div style="width: 100%; display: flex; justify-content: flex-end;"><button id="drawingsClose" class="close">X</button></div>
+            <p>AAAAAA</p>
+        </div>
+        <div id="othersModal" class="modal"></div>
+    </div>
+    <script src="projects.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Vodan;
+    src: url(assets/Vodan.ttf);
+}
+
+@font-face {
+    font-family: HippyStamp;
+    src: url(assets/HippyStamp.ttf);
+}
+
+@font-face {
+    font-family: Type;
+    src: url(assets/Type.ttf);
+}
+
+@font-face {
+    font-family: Night;
+    src: url(assets/Night.ttf);
+}
+
+@font-face {
+    font-family: Cocaine;
+    src: url(assets/Cocaine.ttf);
+}
+
+* {
+    color: black;
+    font-family: Type;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background-image: url(assets/3.jpg);
+    background-color: rgba(245, 245, 245, 0.456);
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 300%;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 550%;
+}
+
+a {
+    width: fit-content;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.545);
+}
+
+button {
+    background: none;
+    border: none;
+    text-align:right;
+    font-size: 150%;
+}
+
+.underlined:hover {
+    background-color: white;
+}
+
+.underlined {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#border {
+    outline: 2px solid black;    
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+}
+
+#whiteline {
+    color: rgb(238, 238, 238);
+    -webkit-text-stroke: 4px rgb(238, 238, 238);
+}
+
+.stamp {
+    font-size: 150%;
+    font-family: HippyStamp;
+    margin-bottom: 10px;
+}
+
+.navegation {
+    position: absolute;
+    right: 104px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#lower {
+    left: 104px;
+    bottom: 87px;
+    right: auto;
+    top: auto;
+    align-items: start;
+}
+
+.middle {
+    position: absolute;
+    top: 100px;
+    right: 104px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+}
+
+#mainImg {
+    position: absolute;
+    top: 25svh;
+    height: 50svh;
+}
+
+.intro {
+    position: absolute;
+    left: 104px;
+    bottom:165px;
+}
+.name {
+    position: absolute;
+    left: 104px;
+    bottom: 87px;
+}
+
+#higher {
+    right: 104px;
+    top: 100px;
+
+}
+
+.close {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    height: fit-content;
+    padding: 5px 10px 20px 20px;    
+}
+
+#modalBackground {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (orientation:portrait) {
+    .navegation {
+        right: 29px;
+        top: 27px;
+    }
+    .intro {
+        left: 35px;
+        bottom: 95px;
+    }
+    .name {
+        left: 30px;
+        bottom: 19px;
+    }
+    #lower {
+        left: 30px;
+        bottom: 25px;
+    }
+
+    .middle {
+        right: 32px;
+        top: 27px;
+        width: 60%;
+    }
+
+    #border {
+        top: 25px;
+        left: 25px;
+        bottom: 25px;
+        right: 25px;
+    }
+}
