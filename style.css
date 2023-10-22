@@ -41,6 +41,7 @@ body {
 }
 
 h3 {
+    text-align: justify;
     font-size: 150%;
 }
 
@@ -195,7 +196,8 @@ button:hover {
     justify-content: center;
     border-radius: 5px;
     height: fit-content;
-    padding: 5px 10px 20px 20px;
+    max-width: 40%;
+    padding: 10px 20px 10px 20px;
     gap: 5px;
     background-color: white;
 }
@@ -274,6 +276,11 @@ button:hover {
     background-color: transparent;
 }
 
+.projectImg {
+    outline: 1px solid black;
+    height: 40vh;
+}
+
 @media (orientation:portrait) {
     .navegation {
         right: 29px;
@@ -321,5 +328,9 @@ button:hover {
     }
     .video {
         max-width: 80vw;
+    }
+    .projectImg {
+        max-width: 80vw;
+        height: auto;
     }
 }
