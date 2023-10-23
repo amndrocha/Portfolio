@@ -1,3 +1,5 @@
+<link rel="prefetch" href="/assets"></link>
+
 function openDev() {
     const dev = document.getElementById('dev');
     if (dev.style.display == "none") {
