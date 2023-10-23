@@ -1,4 +1,22 @@
-<link rel="prefetch" href="/assets"></link>
+var loading = document.getElementById("loading");
+var percent = document.getElementById("percent");
+let loaded;
+
+
+var files = ["assets/background.jpg","assets/main.png","assets/contacts.png","assets/di.png","assets/map.png","assets/drawings/0.jpeg","assets/drawings/1.png","assets/drawings/2.png","assets/drawings/3.png",
+"assets/drawings/4.png","assets/drawings/5.png","assets/drawings/6.png","assets/drawings/7.png"];
+let j = 0;
+
+while (j<files.length) {
+    loaded = j+"/"+files.length;
+    percent.innerHTML = loaded;
+    console.log("Loaded");
+    var my_image = new Image();
+    my_image.src = files[j];
+    j++
+}
+
+loading.style.display = "none";
 
 function openDev() {
     const dev = document.getElementById('dev');
