@@ -167,39 +167,31 @@ button:hover {
 }
 
 #drawingsClose {
-    background-color: transparent;
-    box-shadow: none;
-    margin-bottom: 10px;
-    color: white;
-    display: flex;
-}
-#drawingsClose:hover {
-    background-color: rgba(0, 0, 0, 0.188);
-    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    top: -30px;
 }
 
 
 .close {
-    margin-left: 100%;
-    background-color: rgba(0, 0, 0, 0.188);
-    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
-    padding: 0 10px 4px 10px;
+    color: white;
+    position: absolute;
+    top: -45px;
     font-weight: normal;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    text-decoration: none;
+    text-decoration: underline;
+    padding: 0 5px 8px 5px;
 }
 .close:hover {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75);
 }
 
-.modal {  
+.modal {
+    position: relative;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -288,6 +280,12 @@ button:hover {
 
 .projectImg {
     outline: 1px solid black;
+    max-width: 100%;
+    height: 40vh;
+}
+
+.video {    
+    max-width: 100%;
     height: 40vh;
 }
 
